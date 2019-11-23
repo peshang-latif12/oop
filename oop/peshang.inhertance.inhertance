@@ -1,0 +1,57 @@
+
+package electronic;
+
+
+public class Mobile {
+    
+
+    protected String a ;
+    
+   public void Type(String b ){
+       String a=b;
+        System.out.println("Type "+a);
+        
+    }
+    public void price(double e){
+        double a=e;
+        System.out.println("Price "+a+"$");
+    }
+    
+    public static void main(String[] args) {
+        Apple x=new Apple();
+        x.Type("X Max");
+       x.price(1000);
+       x.System("ios");
+     
+    }
+    
+}
+
+
+package electronic;
+
+ public class Apple extends Mobile {
+   protected String system;
+    
+   public void System(String a){
+    
+    String s =a;
+        System.out.println("Apple System  "+s);
+    }
+    
+    }
+
+
+public class Samsung extends Mobile {
+     protected String system;
+    
+  public  void System(String o){
+    
+    String s=o;
+        System.out.println("Samsung System  "+s);
+    }
+    
+ 
+    }      
+
+
